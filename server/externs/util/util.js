@@ -29,6 +29,23 @@
 var util = {};
 
 /**
+ * @param {*} object
+ * @param {{showHidden: (boolean|undefined),
+ *          depth: (number|null|undefined),
+ *          colors: (boolean|undefined),
+ *          customInspect: (boolean|undefined),
+ *          showProxy: (boolean|undefined),
+ *          maxArrayLength: (integer|undefined),
+ *          maxStringLength: (integer|undefined),
+ *          breakLength: (integer|undefined),
+ *          compact: (boolean|integer|undefined),
+ *          sorted: (boolean|!Function|undefined)}=} options
+ * @return {string}
+ * @nosideeffects
+ */
+util.inspect = function(object, options) {};
+
+/**
  * @param {string} format
  * @param {...*} var_args
  * @return {string}
